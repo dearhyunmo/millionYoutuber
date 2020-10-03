@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Million Youtuber</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/" />
+
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
+
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/326e1cf751.js" crossorigin="anonymous"></script>
+        <script src="js/common.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.slick-track').slick({
+                    arrows:false,
+                    dots: false,
+                    infinite: true,
+                    autoplay: true, //자동플레이 유무( false시 자동플레이 안됨 )
+                    autoplaySpeed: 3000, // 자동플레이 스피드
+                    speed: 500,
+                    fade: true,
+                    cssEase: 'linear'
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <div class="headerbg"></div>
+        <header>
+            <div id="header-top">
+                <img src="img/P_Logo.png" id="logo" alt="main_logo">
+                <input id="login" type="button" value="Login">
+            </div>
+            <div id="header-contents">
+                <div id="header-search">
+                    <input type="text" name="SearchVal" placeholder="채널 키워드 또는 영상 내용을 검색해주세요">
+                    <a href="#"><img src="img/search_icon.png"> 검색</a>
+                </div>
+                <div id="header-video" class="slick-slider">
+                    <div id="sstitle">오늘의 인기 동영상</div>
+                    <div class="slick-list">
+                        <div class="slick-track" style="opacity: 1;">
+                            <div>
+                                <div class="videotext">
+                                    <div class="videoTitle">
+                                        <a href="https://www.youtube.com/watch?v=Sd61rG4_-Sc&t=6s" target="_blank">밸런스게임</a>
+                                    </div>
+                                    <div class="channelName">
+                                        <a href="https://www.youtube.com/user/NewSundaySBS" target="_blank">런닝맨 - 스브스 공식 채널</a>
+                                    </div>
+                                </div>
+                                <div class="youtubevideo">
+                                    <a href="https://www.youtube.com/watch?v=Sd61rG4_-Sc&t=6s" target="_blank"><img src="img/testimg2.png" class="Thumbnail"></a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="videotext">
+                                    <div class="videoTitle">
+                                        <a href="https://www.youtube.com/watch?v=LPwxjynAwLI" target="_blank">[IU TV] 아이유의 유스케 정복기</a>
+                                    </div>
+                                    <div class="channelName">
+                                        <a href="https://www.youtube.com/channel/UC3SyT4_WLHzN7JmHQwKQZww" target="_blank">이지금 [IU Official]</a>
+                                    </div>
+                                </div>
+                                <div class="youtubevideo">
+                                    <a href="https://www.youtube.com/watch?v=LPwxjynAwLI" target="_blank"><img src="img/testimg3.png" class="Thumbnail"></a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="videotext">
+                                    <div class="videoTitle">
+                                        <a href="https://www.youtube.com/watch?v=zhvO6w-pwWE" target="_blank">[#하이라이트#]e스포츠의 전설 '페이커' 유퀴즈 등판!</a>
+                                    </div>
+                                    <div class="channelName">
+                                        <a href="https://www.youtube.com/channel/UC920m3pMPH45qztdhppZhwA" target="_blank">유 퀴즈 온 더 튜브</a>
+                                    </div>
+                                </div>
+                                <div class="youtubevideo">
+                                    <a href="https://www.youtube.com/watch?v=zhvO6w-pwWE" target="_blank"><img src="img/testimg1.png" class="Thumbnail"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="contents">
+            <div id="hr"></div>
+            <div class="contentsTitle">카테고리</div>
+            <div class="sub catergory">
+
+            </div>
+        </div>
+        <footer>
+            <div id="hr"></div>
+            <div class="footertext">
+                <div class="atag">
+                    <a href="#">이용 안내</a>
+                     | 
+                    <a href="#">개발 팀 소개</a>
+                     | 
+                    <a href="#">사용 API 안내</a>
+                     | 
+                    <a href="#">개인정보처리방침</a>
+                     | 
+                    <a href="#">SiteMap</a>
+                </div>
+                <div class="copyright">
+                    Copyright &copy; 100 Millionaire, 2020. All Rights Reserved.
+                </div>
+            </div>
+            <div class="footerlogo">
+                <img src="img/P_Logo.png" alt="footer_logo">
+            </div>
+        </footer>
+        <a href="#" class="btn_gotop">
+            <img src="img/arrow.png">
+        </a>
+    </body>
+</html>
