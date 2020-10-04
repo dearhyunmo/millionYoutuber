@@ -27,8 +27,34 @@
                     fade: true,
                     cssEase: 'linear'
                 });
+/*                 
+                function show(){
+                    $('#table_all').show();
+                }
+                function hide(){
+                    $('#table_all').hide();
+                } */
+               
             })
         </script>
+        <style>
+#table_all {
+   border-collapse: collapse;
+   width: 100%;
+   /* background: linear-gradient(to bottom, #f7efa5, #b48446);
+   background-color: rgba( 255, 255, 255, 0.5 ); */
+}
+
+#table_all th, td {
+   padding: 8px;
+   text-align: center;
+   border-bottom: 1px solid #ddd;
+   color : white;
+}
+#table_all .profile {
+   text-align : left;
+}
+      </style>
     </head>
     <body>
         <div class="headerbg"></div>
@@ -93,20 +119,66 @@
         <div class="contents">
             <div id="hr"></div>
             <div>
-                <div class="left">
-                   <div class="contentsTitle">랭킹순위</div>
-                   <div class="sub catergory" align="center">
-                      <a class="button_category" href="#" id="cate_all">전체(디폴트)</a> 
-                      <a class="button_category" href="#" id="cate_music">음악</a> 
-                      <a class="button_category" href="#" id="cate_game">게임</a> 
-                      <!-- 여기는 옆으로 넘기기 클릭하면? 추가돼서 보일 수 있는 구조로..ㅠㅠ -->
-       <!--                <a class="button_category" href="#" id="cate_movie">영화</a> 
+         <div class="left">
+            <div class="contentsTitle">
+               <img src="img/ranking.png" width=70 height=50>랭킹순위
+            </div>
+            <div class="sub catergory" align="center">
+
+               <a class="button_category" href="#" id="cate_all">전체(디폴트)</a> <a
+                  class="button_category" href="#" id="cate_music">음악</a> <a
+                  class="button_category" href="#" id="cate_game">게임</a>
+               <!-- 여기는 옆으로 넘기기 클릭하면? 추가돼서 보일 수 있는 구조로..ㅠㅠ -->
+               <!--                <a class="button_category" href="#" id="cate_movie">영화</a> 
                       <a class="button_category" href="#" id="cate_edu">학습</a> -->
-                      <img src="img/전체카테고리테이블.JPG">
-       
-                   </div>
-                </div>
-                <div class="right">
+            </div>
+            <table id="table_all">
+               <!--  style ="visibility:hidden;" -->
+               <thead>
+               </thead>
+               <tbody>
+                  <tr>
+                     <th scope="row"><img src="img/no1.png" width=50 height=40></th>
+                     <td class="profile"><img src="img/1위프로필.jpg" width=90
+                        height=90></td>
+                     <td>채널명/구독자 수</td>
+                     <td>대표영상</td>
+                  </tr>
+                  <tr>
+                     <th scope="row"><img src="img/no2.png" width=50 height=40></th>
+                     <td class="profile"><img src="img/2위프로필.jpg" width=90
+                        height=90></td>
+                     <td>채널명/구독자 수</td>
+                     <td>대표영상</td>
+                  </tr>
+                  <tr>
+                     <th scope="row"><img src="img/no3.png" width=50 height=40></th>
+                     <td class="profile"><img src="img/3위프로필.jpg" width=90
+                        height=90>
+                     <td>채널명/구독자 수</td>
+                     <td>대표영상</td>
+                  </tr>
+                  <tr>
+                     <th scope="row">4</th>
+                     <td class="profile"><img src="img/4위프로필.jpg" width=90
+                        height=90>
+                     <td>채널명/구독자 수</td>
+                     <td>대표영상</td>
+                  </tr>
+                  <tr>
+                     <th scope="row">5</th>
+                     <td class="profile"><img src="img/5위프로필.jpg" width=90
+                        height=90>
+                     <td>채널명/구독자 수</td>
+                     <td>대표영상</td>
+                  </tr>
+               </tbody>
+            </table>
+            <!-- <img src="img/전체카테고리테이블.JPG"> -->
+
+
+         </div>
+         <div class="right">
                    <div class ="contentsTitle">새로운 컨텐츠</div>
                    <div> 로그인 전에는 페이지 소개? - 로그인 후 개인맞춤형 서비스를 이용해보세요! 등의 문구</div>
                    <div> 로그인 후에는 "내 구독자 인기 현황" 이라던지, 구독자들끼리의 채팅방?(기존에 없는 서비스이긴하지만 어려울 것 + 지저분할 우려가 있을 것 같음) 게시판도 괜찬을듯!</div>
