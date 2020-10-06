@@ -1,5 +1,5 @@
 /*여백 초기화*/
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, address, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, footer, header, nav, section, audio, video {
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -43,6 +43,7 @@ body{
     background: url(../img/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: -999;
 }
 @media screen and (max-width:1024px){ /*1220 보다 넓이 작아지면 헤더 넓이 800으로 줄여줌*/
     .headerbg{
