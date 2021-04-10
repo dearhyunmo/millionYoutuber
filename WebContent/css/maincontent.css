@@ -14,7 +14,9 @@
  	/* border-left:2px solid #6e6e6e; */
  }
  
-.button_category {
+
+
+ .button_category {
   padding: 15px 100px;
   margin:10px 4px;
   color: #fff;
@@ -24,6 +26,7 @@
   text-decoration: none;
   display:inline-block;
   
+  cursor: pointer;
 }
 
 .button_category::before {
@@ -81,5 +84,30 @@
   transform: scale(1, 1)
 }
 
- 
- 
+.tab li{
+  display: inline-block;
+}
+
+.current{ 
+  background: linear-gradient(to bottom, #f7efa5, #b48446);
+  background-repeat: no-repeat;
+  background-size : auto 1%;
+  background-position: bottom;
+}
+
+#table_all {
+  border-collapse: collapse;
+  width: 100%;
+  /* background: linear-gradient(to bottom, #f7efa5, #b48446);
+  background-color: rgba( 255, 255, 255, 0.5 ); */
+}
+
+#table_all th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  color : white;
+}
+#table_all .profile {
+  text-align : left;
+}
