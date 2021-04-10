@@ -3,7 +3,7 @@ header{
 }
 
 .headerbg{
-    height: 760px;
+    height: 800px;
 }
 
 @media screen and (max-width:768px){ 
@@ -14,14 +14,14 @@ header{
 
 .login_body{
     width: 500px;
-    height: 660px;
+    height: 650px;
     margin: 0 auto;
 }
 
 .login_bg{
     width: 400px;
     height: 460px;
-    margin: 0 auto;
+    margin: 50px auto 0;
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     border-radius: 5px;
